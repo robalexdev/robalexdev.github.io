@@ -6,8 +6,6 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 
-gem 'jekyll-theme-midnight', '~> 0.1.1'
-
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "github-pages"

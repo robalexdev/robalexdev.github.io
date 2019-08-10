@@ -9,7 +9,7 @@ github_username: ralexander-phi
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-tactile
+remote-theme: uswds-jekyll
 plugins:
   - jekyll-feed
 
