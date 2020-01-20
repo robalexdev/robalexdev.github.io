@@ -9,3 +9,9 @@ main, body, html {
   background-color: #e8e8e8;
 }
 
+img:not(.flow) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
