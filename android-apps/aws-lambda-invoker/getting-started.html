@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>AWS Lambda Invoker for Android</title>
+
+<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+
+<nav><p><a href="./">↰ Up</a></p></nav>
+
+<article>
+
+<h1>AWS Lambda Invoker for Android</h1>
+
+<p>
+<a href="https://play.google.com/store/apps/details?id=com.alexsci.android.lambdarunner">
+<img alt="Get it on Google Play" src="../images/google-play-badge.png" width="250" height="auto"/>
+</a>
+</p>
+
+<p>
+<img src="../images/ListFunctions.jpg" width="300em" alt="List Functions Activity">
+</p>
+
+<h2 id="getting_started">Getting Started</h2>
+
+<p>
+You'll want to have an AWS account with some AWS Lambda functions setup before you begin.
+</p>
+
+<p>
+You should create an AWS IAM user for the app.
+The following permissions are sufficient.
+</p>
+
+<div class="code">
+{ <br />
+&nbsp;&nbsp;"Version": "2012-10-17", <br />
+&nbsp;&nbsp;"Statement": [ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;{ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Sid": "LambdaInvokerStmt", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Effect": "Allow", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Action": [ <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"lambda:ListFunctions", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"lambda:InvokeFunction", <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"iam:GetUser" <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;], <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Resource": "*" <br />
+&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+&nbsp;&nbsp;] <br />
+}
+</div>
+
+<h2 id="load_credentials">Load Credentials</h2>
+<p>
+Create an access key and copy the access key ID and secret access key.
+</p>
+
+<p>
+You can convert these credentials to a QR code for faster entry if you'd prefer.
+Try the converter <a href="qr-code-credentials.html">here</a>, or create your own QR code using the access key ID and the secret access key separated by a new line.
+</p>
+
+<p>
+The app will validate the credential and get the IAM user name for convenience.
+Feel free to add as many keys are you need, although you probably just need one.
+</p>
+
+<p>
+Select your credentials from the list and proceed to the function listing.
+</p>
+
+<h2 id="select_function">Select a Function</h2>
+<p>
+The function listing activity displays the AWS Lambda functions found for the selected region.
+Be sure to select the correct region to find your function.
+Once you find the function you want, select it.
+</p>
+
+<h2 id="invoke_function">Invoke Your Function</h2>
+<p>
+AWS Lambda functions typically use JSON for input and output, so our function invoker uses a JSON editor.
+Configure the JSON as needed, then click the Invoke button.
+</p>
+
+<h2 id="review_results">Review the Results</h2>
+<p>
+Finally, you will see the output of the Lambda function.
+This screen allows you to select text, copy the entire output, and click on any links.
+</p>
+
+<p>
+<a href="https://play.google.com/store/apps/details?id=com.alexsci.android.lambdarunner">
+<img alt="Get it on Google Play" src="../images/google-play-badge.png" width="250" height="auto"/>
+</a>
+</p>
+</article>
+
