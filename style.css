@@ -15,3 +15,9 @@ img:not(.flow) {
   margin-right: auto;
 }
 
+h4 {
+  padding-top: 3em;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
