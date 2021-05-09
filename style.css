@@ -4,9 +4,20 @@ main, body, html {
   max-width: 60em;
   padding-left: 2em;
   padding-right: 2em;
+  padding-bottom: 6em;
   font-family: Georgia, "Times New Roman", serif;
-  color: #484848;
-  background-color: #e8e8e8;
+  color: #3A2F2C;
+  background: linear-gradient(#C4E5FD, #E1F2FE);
+}
+
+h1 {
+  background-color: #631CC1;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 3.5em;
+  color: #DAD9E8;
 }
 
 img:not(.flow) {
