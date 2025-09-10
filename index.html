@@ -9,159 +9,163 @@
     <link rel="me" href="https://github.com/robalexdev/">
     <link rel="me" href="https://alexsci.com/blog/">
     <link rel="me" href="https://robalexdev.com/">
+    <script>
+      window.addEventListener("DOMContentLoaded", e => {
+        document.getElementById("email").innerText =
+          atob("cm9iYWxleGRldi5jb20lcm9iZXJ0").split("%").reverse().join("@");
+      });
+    </script>
   </head>
 
   <body>
+    <section class="section">
 
-    <section class="section is-size-4">
-      <div class="notification">
+      <section class="section is-size-4">
         <p class="mb-4">
         <span class="has-text-weight-bold">Hello!</span> I'm Robert.
         <p class="mb-4">
-        I use this site for my non-serious side.
-        Here you'll find my blog and numerous mini-projects.
+        I use this site for my personal hobby projects.
         <p class="mb-4">
-        I occasionally post on
-        <a rel="me" href="https://alexsci.com/blog/">my blog</a>
-        and
-        <a rel="me" href="https://indieweb.social/@robalex">Mastodon</a>.
-        <p class="mb-4">
-        <b>Statements are my own and do not represent the positions or opinions of my employer.</b>
+        Feel free to reach out if our interests align at
+        <span id="email">(enable JS)</span>
+        or on
+        <a class="is-underlined" rel="me" href="https://indieweb.social/@robalex">Mastodon</a>.
         <p class="mb-4">
         Enjoy.
+      </section>
+
+      <div class="notification">
+        <div class="p-4">
+          <p class="title">
+            My Writing
+          </p>
+          <p class="subtitle">
+            <a class="is-underlined" href="https://alexsci.com/blog/">Open Blog</a>
+          </p>
+          <p class="subtitle">
+            A tech blog mostly focused on Internet technology and security.
+          </p>
+        </div>
       </div>
+
+
+      <h1 class="title pt-6">Projects</h1>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        RSS Blogroll Network
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/rss-blogroll-network/">Open</a> |
+        <a class="is-underlined" href="https://alexsci.com/blog/blogroll-network/">Blog Post</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/rss-blogroll-network">Code</a>
+      </p>
+      <p class="subtitle">
+        The RSS Blogroll Network maps blogs using blogrolls and microformats
+      </p>
+      </div>
+      </section>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        License Approval GitHub Actions
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://github.com/marketplace/actions/license-approval">Learn More</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/license_approval">Code</a>
+      </p>
+      <p class="subtitle">
+        Track and approve the licenses your project uses.
+      </p>
+      </div>
+      </section>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        Marp Action for GitHub
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/test-marp-action/">Get Started</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/marp-to-pages/">Code</a>
+      </p>
+      <p class="subtitle">
+        Instantly host markdown presentations using GitHub Pages.
+      </p>
+      </div>
+      </section>
+
+
+      <h1 class="title pt-6">Mini Projects</h1>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        Relax
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/relax/">Start Relaxing</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/relax">Code</a>
+      </p>
+      <p class="subtitle">
+        A minimal white noise progressive web app.
+      </p>
+      </div>
+      </section>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        Weekly Chore Tracker
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/chore-wheel/">Start Planning</a> |
+        <a class="is-underlined" href="https://alexsci.com/blog/personal-apps/">Blog Post</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/chore-wheel">Code</a>
+      </p>
+      <p class="subtitle">
+        A simple weekly chore tracker.
+      </p>
+      </div>
+      </section>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">
+        Which License
+      </p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/which-license/">Open</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/which-license">Code</a>
+      </p>
+      <p class="subtitle">
+        Identify common software licenses.
+      </p>
+      </div>
+      </section>
+
+      <section class="hero">
+      <div class="hero-body">
+      <p class="title">Games for Toddlers</p>
+      <p class="subtitle">
+        <a class="is-underlined" href="https://alexsci.com/games/">Play</a> |
+        <a class="is-underlined" href="https://github.com/ralexander-phi/games">Code</a>
+      </p>
+      <p class="subtitle">
+        Help toddlers learn basic computer skills with simple games.
+      </p>
+      </div>
+      </section>
     </section>
 
-    <section class="section">
-
-
-      <div class="columns">
-      <div class="column">
-        <h1 class="title is-1">Projects</a>
-
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          RSS Blogroll Network
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/rss-blogroll-network/">Open</a> |
-          <a class="is-underlined" href="https://alexsci.com/blog/blogroll-network/">Blog Post</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/rss-blogroll-network">Code</a>
-        </p>
-        <p class="subtitle">
-          The RSS Blogroll Network maps blogs using blogrolls and microformats
-        </p>
-        </div>
-        </section>
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          License Approval GitHub Actions
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://github.com/marketplace/actions/license-approval">Learn More</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/license_approval">Code</a>
-        </p>
-        <p class="subtitle">
-          Track and approve the licenses your project uses.
-        </p>
-        </div>
-        </section>
-
-
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          Marp Action for GitHub
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/test-marp-action/">Get Started</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/marp-to-pages/">Code</a>
-        </p>
-        <p class="subtitle">
-          Instantly host markdown presentations using GitHub Pages.
-        </p>
-        </div>
-        </section>
-
-
-      </div>
-      <div class="column">
-        <h1 class="title is-1">Mini Projects</a>
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          Relax
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/relax/">Start Relaxing</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/relax">Code</a>
-        </p>
-        <p class="subtitle">
-          A minimal white noise progressive web app.
-        </p>
-        </div>
-        </section>
-
-
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          Weekly Chore Tracker
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/chore-wheel/">Start Planning</a> |
-          <a class="is-underlined" href="https://alexsci.com/blog/personal-apps/">Blog Post</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/chore-wheel">Code</a>
-        </p>
-        <p class="subtitle">
-          A simple weekly chore tracker.
-        </p>
-        </div>
-        </section>
-
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">
-          Which License
-        </p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/which-license/">Open</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/which-license">Code</a>
-        </p>
-        <p class="subtitle">
-          Identify common software licenses.
-        </p>
-        </div>
-        </section>
-
-
-        <section class="hero">
-        <div class="hero-body">
-        <p class="title">Games for Toddlers</p>
-        <p class="subtitle">
-          <a class="is-underlined" href="https://alexsci.com/games/">Play</a> |
-          <a class="is-underlined" href="https://github.com/ralexander-phi/games">Code</a>
-        </p>
-        <p class="subtitle">
-          Help toddlers learn basic computer skills with simple games.
-        </p>
-        </div>
-        </section>
-      </div>
-      </div>
-
-    </section>
-
+    <footer class="footer has-text-centered p-6">
+      Copyright Robert Alexander 2013-2025
+      <br />
+      <i>Statements are my own and do not represent the positions or opinions of my employer</i>
+    </footer>
     <script data-goatcounter="https://alexsci.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-
   </body>
 </html>
 
